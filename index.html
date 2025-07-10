@@ -29,7 +29,72 @@
 <link rel="stylesheet" preload href="css/style.css">
 <style>
 
- 
+ .single-service-one {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.single-service-one .icon {
+  font-size: 36px;
+  color: #ff5e14;
+  margin-bottom: 15px;
+}
+
+.single-service-one .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.single-service-one .disc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .single-service-one {
+    padding: 15px;
+  }
+
+  .single-service-one .icon {
+    font-size: 28px;
+  }
+
+  .single-service-one .title {
+    font-size: 16px;
+  }
+
+  .single-service-one .disc {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-service-one {
+    padding: 12px;
+  }
+
+  .single-service-one .icon {
+    font-size: 24px;
+  }
+
+  .single-service-one .title {
+    font-size: 15px;
+  }
+
+  .single-service-one .disc {
+    font-size: 12.5px;
+  }
+}
+
 .gallery-item {
   overflow: hidden;
   border-radius: 10px;
@@ -401,7 +466,7 @@ with Us Today!</h1>
      expert installation and maintenance services, 
     supporting safety and compliance across the nation’s infrastructure and development projects.</p>
 <div class="button-wrapper">
-<a href="#" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+<a href="about.html" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
 </svg></a>
 </div>
@@ -427,7 +492,7 @@ with Us Today!</h1>
 <p class="disc">We deliver turnkey fire protection solutions to meet the diverse safety needs of clients across commercial,
      industrial, and residential sectors.</p>
     <div class="button-wrapper">
-        <a href="#" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+        <a href="about.html" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
         </svg></a>
         </div>
@@ -453,7 +518,7 @@ with Us Today!</h1>
 <p class="disc">Our team of highly skilled fire protection engineers and technicians ensures that all systems are designed
      and executed with precision, efficiency, and full compliance with fire safety regulations.</p>
     <div class="button-wrapper">
-        <a href="#" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+        <a href="about.html" class="rts-btn btn-white">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
         </svg></a>
         </div>
@@ -634,14 +699,13 @@ We also specialize in the integration of Emergency Exit Lighting and Central Bat
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <div class="single-service-one">
-<span class="water-mark">Service 01</span>
 <div class="icon">
     <i class="bi bi-gear"></i></div>
 <div class="inner">
 <h5 class="title">Fire Alarm Systems </h5>
 <p class="disc ">
     Supply, installation, testing, and commissioning of addressable and conventional 
-    fire alarm systems
+    fire alarm systems and also ensure safety.
 
 </p>
 </div>
@@ -649,7 +713,6 @@ We also specialize in the integration of Emergency Exit Lighting and Central Bat
 </div>
 <div class="swiper-slide">
 <div class="single-service-one">
-<span class="water-mark">Service 02</span>
 <div class="icon">
     <i class="bi bi-gear"></i>
 </div>
@@ -665,7 +728,6 @@ We also specialize in the integration of Emergency Exit Lighting and Central Bat
 </div>
 <div class="swiper-slide">
 <div class="single-service-one">
-<span class="water-mark">Service 03</span>
 <div class="icon">
     <i class="bi bi-gear"></i></div>
 <div class="inner">
@@ -679,26 +741,24 @@ We also specialize in the integration of Emergency Exit Lighting and Central Bat
 </div>
 <div class="swiper-slide">
 <div class="single-service-one">
-<span class="water-mark">Service 04</span>
 <div class="icon">
     <i class="bi bi-gear"></i></div>
 <div class="inner">
 <h5 class="title">Kitchen Fire System</h5>
 <p class="disc">
-Automatic fire suppression for commercial kitchens, ensuring quick response to grease fires.
+Automatic fire suppression for commercial kitchens, ensuring quick response to grease fires and safety
 </p>
 </div>
 </div>
 </div>
 <div class="swiper-slide">
     <div class="single-service-one">
-    <span class="water-mark">Service 05</span>
     <div class="icon">
         <i class="bi bi-gear"></i>    </div>
     <div class="inner">
     <h5 class="title">Fire Stop & Passive Protection</h5>
     <p class="disc">
-    Installation of certified firestop systems and passive protection measures to contain fire and smoke spread through penetrations.
+    Installation of firestop systems and passive protection measures to contain fire and smoke and also ensure the safety
 
     </p>
     </div>
@@ -707,7 +767,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
 
     <div class="swiper-slide">
         <div class="single-service-one">
-        <span class="water-mark">Service 06</span>
         <div class="icon">
             <i class="bi bi-gear"></i>        </div>
         <div class="inner">
@@ -721,7 +780,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
         </div>
         <div class="swiper-slide">
             <div class="single-service-one">
-            <span class="water-mark">Service 07</span>
             <div class="icon">
                 <i class="bi bi-gear"></i>            </div>
             <div class="inner">
@@ -734,7 +792,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
             </div>
             <div class="swiper-slide">
                 <div class="single-service-one">
-                <span class="water-mark">Service 08</span>
                 <div class="icon">
                     <i class="bi bi-gear"></i>                </div>
                 <div class="inner">
@@ -748,7 +805,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
                 </div>
                  <div class="swiper-slide">
                 <div class="single-service-one">
-                <span class="water-mark">Service 09</span>
                 <div class="icon">
                     <i class="bi bi-gear"></i>                </div>
                 <div class="inner">
@@ -761,7 +817,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
                 </div>
                  <div class="swiper-slide">
                 <div class="single-service-one">
-                <span class="water-mark">Service 10</span>
                 <div class="icon">
                     <i class="bi bi-gear"></i>                </div>
                 <div class="inner">
@@ -774,7 +829,6 @@ Automatic fire suppression for commercial kitchens, ensuring quick response to g
                 </div>
                  <div class="swiper-slide">
                 <div class="single-service-one">
-                <span class="water-mark">Service 11</span>
                 <div class="icon">
                     <i class="bi bi-gear"></i>                </div>
                 <div class="inner">
