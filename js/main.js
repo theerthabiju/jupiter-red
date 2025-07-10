@@ -355,6 +355,7 @@
     },
 
     // search popup
+    
     searchOption: function () {
       $(document).on('click', '.search', function () {
         $(".search-input-area").addClass("show");
