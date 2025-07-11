@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+        content="Jupiter X  Trading Contracting and Services is a Qatar-based company committed to delivering end-to-end solutions across the fire protection 
+           and general contracting sectors.">
+           <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Jupiter X  Trading Contracting and Services">
+
 <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
 <title>Jupiter X - JupiterX Trading Contracting and Services </title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -99,11 +106,32 @@
 .gallery-item {
   overflow: hidden;
   border-radius: 10px;
+    position: relative;
+  cursor: pointer;
 }
 
+
+.gallery-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(250, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.gallery-item:hover .gallery-text {
+  opacity: 1;
+}
 .gallery-item img {
   width: 100%;
-  height: 250px; 
+  height: 300px; 
   object-fit: cover; 
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -169,53 +197,54 @@
 <div class="header-two-container">
 <div class="row">
 <div class="col-12">
+
 <div class="header-main-wrapper">
-    <!-- <div class="logobackground"> -->
         <div class="logo-area">
             <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="image-logo">
+            <img class="jupiterlogo" src="images/logo.png" alt="image-logo">
             </a>
             </div>
-    <!-- </div> -->
 
 <!-- header right start -->
 <div class="rts-header-right position-static">
+  <!-- top header -->
+<div class="top ">
 
-<!-- top header -->
-<div class="top">
-
-<div class="end-top">
+<div class="end-top d-flex  align-items-center">
 <div class="single-info dropdown">
   <!-- Dropdown Toggle (phone icon) -->
   <div class="icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
-    <i class="bi bi-telephone-fill"></i>
+    <i class="bi bi-telephone-fill text-white"></i>  Phone
   </div>
 
   <!-- Dropdown Menu with phone numbers -->
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="tel:+97433161309">+974 33 161 309</a></li>
+    <li><a class="dropdown-item " href="tel:+97433161309">+974 33 161 309</a></li>
     <li><a class="dropdown-item" href="tel:+97470501222">+974 70 501 222</a></li>
     <li><a class="dropdown-item" href="tel:+97444769976">+974 44 769 976</a></li>
   </ul>
 </div>
-<div class="single-info">
-<div class="icon"><i class="bi bi-envelope-fill"></i></div>
-<a href="mailto:name@email.com">info@jupiterxgcc.com</a>
+<div class="single-info d-flex g-4">
+<div class="icon m-3">
+  <i class="bi bi-envelope-fill text-white "></i> 
+</div>
+<a href="mailto:name@email.com" class="text-white m-3">info@jupiterxgcc.com</a>
 </div>
 </div>
 
 <div class="start-top">
-<div class="social-header">
-<span>Follow Us On:</span>
+<div class="social-header text-white">
+<span class="text-white">Follow Us On:</span>
 <ul>
-<li><a href="#"><i class="fa-brands fa-facebook-f fb"></i></a></li>
-<li><a href="#"><i class="fa-brands fa-twitter fb"></i></a></li>
-<li><a href="#"><i class="fa-brands fa-whatsapp fb "></i></a></li>
-<li><a href="#"><i class="fa-brands fa-linkedin-in fb"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-facebook-f fb text-white"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-twitter fb text-white"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-whatsapp fb text-white"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin-in fb text-white"></i></a></li>
 </ul>
 </div>
 </div>
 </div>
+
 <!-- top header end -->
 <!-- bottom header start -->
 <div class="bottom">
@@ -252,8 +281,7 @@
         </div>
 
 <a href="contact.html" class="rts-btn btn-header btn-transparent">Contact
-<img src="images/icons/arrow-up-right.svg" alt="arrow">
-</a>
+<i class="bi bi-arrow-up-right"></i></a>
 <div class="nav-btn menu-btn">
 <img src="images/logo/bar.svg" alt="nav-iamge">
 </div>
@@ -273,56 +301,59 @@
 <!-- Optional overlay background -->
 <div id="anywhere-home"></div>
 
-<!-- MOBILE MENU--------------------------------------------------------------------------------------------------------------------------------------------- -->
-
+<!-- header two -->
 <header class="heder-one header--sticky">
     <div class="header-two-container">
         <div class="row">
             <div class="col-12">
+                 
                 <div class="header-main-wrapper">
-                    <div class="logo-area">
+                           <div class="logo-area">
                         <a href="index.html" class="logo">
-                            <img src="images/logo.png" alt="image-logo">
+                            <img class="jupiterlogo" src="images/logo.png" alt="image-logo">
                         </a>
                     </div>
                     <!-- header right start -->
                     <div class="rts-header-right  position-static">
-
-                        <!-- top header -->
+ <!-- top header -->
                         <div class="top">
 
                             <div class="end-top">
-                              <div class="single-info">
-  <div class="icon" onclick="togglePhones()" style="cursor: pointer;">
-    <i class="bi bi-telephone-fill"></i>
+ <div class="single-info dropdown">
+  <!-- Dropdown Toggle (phone icon) -->
+  <div class="icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+    <i class="bi bi-telephone-fill text-white"></i>  Phone
   </div>
 
-  <div id="phone-numbers" style="display: none;">
-    <a href="tel:+97433161309">+974 33 161 309</a><br />
-    <a href="tel:+97470501222">+974 70 501 222</a><br />
-    <a href="tel:+97444769976">+974 44 769 976</a>
-  </div>
+  <!-- Dropdown Menu with phone numbers -->
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item " href="tel:+97433161309">+974 33 161 309</a></li>
+    <li><a class="dropdown-item" href="tel:+97470501222">+974 70 501 222</a></li>
+    <li><a class="dropdown-item" href="tel:+97444769976">+974 44 769 976</a></li>
+  </ul>
 </div>
                                 <div class="single-info">
-                                    <div class="icon"><i class="bi bi-envelope-fill"></i></div>
-                                    <a href="mailto:name@email.com">info@jupiterxgcc.com </a>
+                                    <div class="icon"><i class="bi bi-envelope-fill text-white"></i></div>
+                                    <a href="mailto:name@email.com" class="text-white">info@jupiterxgcc.com </a>
                                 </div>
                             </div>
                             <div class="start-top">
                                 <div class="social-header">
-                                    <span>Follow Us On:</span>
+                                    <span class="text-white">Follow Us On:</span>
                                     <ul>
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f fb"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-twitter fb"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-whatsapp fb"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in fb"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f fb text-white"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter fb text-white"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp fb text-white"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in fb text-white"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- top header end -->
+                    
                         <!-- bottom header start -->
                         <div class="bottom">
+                   
                             <!-- header style two -->
                             <!-- nav area start -->
                             <div class="nav-area">
@@ -351,8 +382,8 @@
                             <div class="right-area">
                               
                                 <a href="contact.html" class="rts-btn btn-header btn-transparent">Contact
-                                    <img src="images/icons/arrow-up-right.svg" alt="arrow">
-                                </a>
+<i class="bi bi-arrow-up-right"></i>                              
+  </a>
                                 <div class="nav-btn menu-btn" id="menu-btn">
                                     <img src="images/logo/bar.svg" alt="nav-iamge">
                                 </div>
@@ -388,6 +419,8 @@
 </div>
 </div>
 </div>
+<!-- MOBILE MENU--------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 <!-- mobile menu area start -->
 <div class="mobile-menu d-block d-xl-none">
 <nav class="nav-main mainmenu-nav mt--30">
@@ -533,7 +566,56 @@ with Us Today!</h1>
 </div>
 </div>
 <!-- banner swiper wrapper area end -->
+<section class="gallerysectionjupiter py-2 m-5">
+  <div class="container">
+    <h2 class="jupitergallery mb-5 pb-5 " data-aos="fade-down">Main Services</h2>
 
+    <div class="row g-4">
+      <!-- Gallery Item 1 -->
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-aos="fade-up">
+  <div class="gallery-item position-relative overflow-hidden">
+    <img src="images/fp.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+    <div class="gallery-text">
+      <a href="products.html"><p class="text-white">FIRE PROTECTION SYSTEM</p></a>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Gallery Item 2 -->
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-aos="fade-up">
+  <div class="gallery-item position-relative overflow-hidden">
+    <img src="images/emr.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+    <div class="gallery-text">
+      <a href="products.html"><p class="text-white">EXIT LIGHTING & BATTERY SYSTEM</p></a>
+    </div>
+  </div>
+</div>
+
+      <!-- Gallery Item 3 -->
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-aos="fade-up">
+  <div class="gallery-item position-relative overflow-hidden">
+    <img src="images/mp.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+    <div class="gallery-text">
+      <a href="products.html"><p class="text-white">CIVIL AND MEP</p></a>
+    </div>
+  </div>
+</div>
+
+      <!-- Gallery Item 4 -->
+         <div class="col-lg-3 col-md-4 col-sm-6 col-12" data-aos="fade-up">
+  <div class="gallery-item position-relative overflow-hidden">
+    <img src="images/cr.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+    <div class="gallery-text">
+      <a href="products.html"><p class="text-white">CARPENTRY WORKS </p></a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
 
 <!-- fun facts area starts -->
 <div class="fun-facts-area rts-section-gap">
@@ -640,7 +722,7 @@ data-aos="reveal-end">
 <h2 class="title">We focus on delivering high-performance, cost-effective, and sustainable firefighting system 
     installation and maintenance solutions to enhance safety and support the nation’s infrastructure and development goals</h2>
 <p class="disc threepara">
-Jupiter X Trading and Contracting is a Qatar-based company committed to delivering end-to-end solutions across the fire protection 
+Jupiter X  Trading Contracting and Servicesis a Qatar-based company committed to delivering end-to-end solutions across the fire protection 
 and general contracting sectors. Our core expertise lies in the design, supply, installation, testing, and commissioning of a full 
 range of fire protection systems—including Fire Alarms (addressable & conventional),
  Fire Fighting Systems, Clean Agent and Foam Suppression Systems, Kitchen Hood Systems, Aerosol Suppression, and Passive Fire Protection.
@@ -1059,70 +1141,7 @@ Abu Dhabi</a>
 </section>
 
 
-<section class="gallerysectionjupiter py-5 m-5">
-  <div class="container">
-    <h2 class="jupitergallery mb-5 pb-5">Work 
-        Related Photos</h2>
 
-    <div class="row g-4">
-      <!-- Gallery Item 1 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-1.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
-        </div>
-      </div>
-
-      <!-- Gallery Item 2 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/F-8.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 2">
-        </div>
-      </div>
-
-      <!-- Gallery Item 3 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-3.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 3">
-        </div>
-      </div>
-
-      <!-- Gallery Item 4 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-4.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 4">
-        </div>
-      </div>
-
-      <!-- Gallery Item 5 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-5.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 5">
-        </div>
-      </div>
-
-      <!-- Gallery Item 6 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-6.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 6">
-        </div>
-      </div>
-
-      <!-- Gallery Item 7 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/f-7.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 7">
-        </div>
-      </div>
-
-      <!-- Gallery Item 8 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-        <div class="gallery-item">
-          <img src="images/F-9.png" class="img-fluid rounded shadow-sm" alt="Gallery Image 8">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <div class="cta-area-wrapper ">

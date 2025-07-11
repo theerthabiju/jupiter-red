@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap");
 :root {
-  --color-primary: #c52222;
+  --color-primary: #b30000;
   --color-secondary:#f06947;
   --color-body: #6B6B6B;
   --color-heading-1: #FFFFFF;
@@ -417,6 +417,18 @@ ul.liststyle.bullet li {
     padding-left: 19px;
   }
 }
+
+
+.top{
+  background-color: #b30000;
+  height: 40px;
+  color: white;
+   display: flex;
+  align-items: center;
+  border-top-right-radius: 10px;
+}
+
+
 ul.liststyle.bullet li::before {
   position: absolute;
   content: "";
@@ -11789,7 +11801,6 @@ box-shadow: 2px 2px 4px 2px rgb(0, 0, 0 , 0.1);
 .heder-one .header-two-container {
   margin: auto;
   position: relative;
-  padding-left: 50px;
 }
 @media screen and (max-width: 1919px) {
   .heder-one .header-two-container {
@@ -11806,6 +11817,7 @@ box-shadow: 2px 2px 4px 2px rgb(0, 0, 0 , 0.1);
   align-items: center;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 1300px) {
   .heder-one .header-two-container .header-main-wrapper {
     padding: 22px 0;
@@ -11817,7 +11829,6 @@ box-shadow: 2px 2px 4px 2px rgb(0, 0, 0 , 0.1);
   }
 }
 .heder-one .header-two-container .header-main-wrapper .logo-area a {
-  padding: 20px 35px 20px 0;
   display: block;
 }
 @media screen and (max-width: 1420px) {
@@ -11888,7 +11899,7 @@ box-shadow: 2px 2px 4px 2px rgb(0, 0, 0 , 0.1);
   align-items: center;
   justify-content: space-between;
   gap: 444px;
-  border-bottom: 1px solid #b6b6b6;
+  border-bottom: 1px solid #ffffff;
 }
 @media screen and (max-width: 1820px) {
   .heder-one .header-two-container .header-main-wrapper .rts-header-right .top {
@@ -12459,7 +12470,7 @@ header.header-three .header-end .button-wrapper .action-btn > div i {
   gap: 15px;
   padding: 30px 0;
 }
-.header-five .header-top-area .header-top-wrapper-5 .right-area-info .single-contact-info .logo {
+.header-five .header-top-area .header-top-wrapper-5 .right-area-info .single-contact-info .logo .jupiterlogo {
   height: 50px;
   width: 50px;
   display: flex;
@@ -12468,6 +12479,22 @@ header.header-three .header-end .button-wrapper .action-btn > div i {
   background: var(--color-primary);
   border-radius: 5px;
 }
+
+/* Make it responsive on smaller screens */
+@media (max-width: 1200px) {
+  .jupiterlogo {
+    height: 100px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jupiterlogo {
+    height: 55px !important;
+    width: 105px !important;
+  }
+}
+
 .header-five .header-top-area .header-top-wrapper-5 .right-area-info .single-contact-info .logo i {
   color: #fff;
   font-size: 18px;
@@ -13688,8 +13715,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   width: 40px;
   height: 40px;
   display: block;
-  background: #171717;
-  border: 1px solid #222222;
+  background: #b30000;
+  border: 1px solid #9b0000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13710,30 +13737,75 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   padding: 2px 0;
   border-bottom: 1px solid #f1f1f1;
 }
-
-/* elements  */
 .bg_banner-one {
-  background-image: url(../images/jbb.png);
-background-repeat: no-repeat;
-background-size: cover;
-  height: 820px;
-  max-width: 1820px;
-  margin: auto;
-  border-radius: 10px;
+    background-image: url(../images/banner/mb11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1820px;
+    margin: auto;
+    border-radius: 10px;
+    aspect-ratio: 16/9; 
+    height: 1000px;
 }
+
+@media (max-width: 576px) {
+    .bg_banner-one {
+        aspect-ratio: 16/10; 
+    }
+}
+
+
 @media only screen and (max-width: 767px) {
   .bg_banner-one {
-    height: auto;
+    height: 600px;
+    background-image: url(../images/banner/mb3.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1820px;
+    margin: auto;
+    border-radius: 10px;
+    aspect-ratio: 16/9; 
+  }
+  .bg_banner-one.two{
+        height: 600px;
+
+  }
+  .bg_banner-one.three{
+                height: 600px;
+
   }
 }
 .bg_banner-one.two {
-  background-image: url(../images/banner/bbbb.png);
+  background-image: url(../images/banner/fire1.png);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1820px;
+    margin: auto;
+    border-radius: 10px;
+    aspect-ratio: 16/9; 
+
 }
 .aboutusimg{
   height: 600px;
 }
 .bg_banner-one.three {
-  background-image: url(../images/banner/firebanner3.png);
+  background-image: url(../images/banner/fire2.png);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1820px;
+    margin: auto;
+    border-radius: 10px;
+    aspect-ratio: 16/9; 
+
+
 }
 .about-company-service-area{
   background-image: url(../images/f-4.png);
@@ -15102,7 +15174,9 @@ background-size: cover;
   min-width: max-content;
   margin-top: 9px;
 }
-
+.bi-arrow-up-right{
+  font-weight: 900;
+}
 .rts-btn {
   font-size: 16px;
   font-weight: 700;
@@ -15112,10 +15186,10 @@ background-size: cover;
   min-width: max-content;
 }
 .rts-btn.btn-header {
-  background: var(--color-primary);
+  background: white;
   padding: 21px 40px;
   font-weight: 600;
-  color: #fff;
+  color: #b30000;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -18465,7 +18539,7 @@ color: #784e87;
   border-radius: 10px;
 }
 .fb{
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
 }
 .single-project-card-inner .inner {
   position: absolute;
